@@ -1,0 +1,27 @@
+alias k8='kubectl'
+
+alias pods='k8 get pods'
+alias ksvc='k8 get service'
+alias kubbroker='k8 get clusterservicebroker'
+alias kubinstance='k8 get serviceinstance'
+alias kubbinding='k8 get servicebinding'
+alias kapply='k8 apply -f'
+alias klogs='k8 logs -f'
+alias kdes='k8 describe'
+alias kexe='k8 exec -ti'
+alias kdel='k8 delete'
+alias kget='k8 get'
+
+# Helm
+alias hinst='helm install --tls'
+alias hdel='helm delete --tls'
+alias hdry='hinst --dry-run --debug'
+alias hlist='helm list --tls'
+alias hup='helm upgrade --tls'
+alias hpurge='hdel --purge'
+alias hln="hlist --namespace"
+
+# IBM Cloud Private
+#alias api='cloudctl api' # ibm specific
+#alias ns='cloudctl target' # ibm specific
+#alias nschange='cloudctl target -n' # ibm specific
