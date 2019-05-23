@@ -1,0 +1,3 @@
+== Bash commands
+
+Set of env files containing useful aliases
